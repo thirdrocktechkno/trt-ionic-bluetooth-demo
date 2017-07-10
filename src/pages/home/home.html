@@ -12,8 +12,8 @@
   </ion-list-header>
   <ion-item *ngFor='let device of unpairedDevices'>
     <span (click)="selectDevice(device.address)">
-{{device.name}}
-</span>
+      {{device.name}}
+    </span>
   </ion-item>
   <ion-spinner name="crescent" *ngIf="gettingDevices"></ion-spinner>
 </ion-list>
